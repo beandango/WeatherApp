@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="Simple Weather App" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppings:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;600;700;900&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+            <div class="container">
+                <div class="search-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Enter a Location">
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                </div>
+
+                <div class="not-found">
+                    <img src="images/not-found.png" width="400px">
+                    <p>Oops! We couldn't find that location :(</p>
+                </div>
+
+                <div class="weather-box">
+                    <img src="">
+                    <p class="temperature"></p>
+                    <p class="description"></p>
+                </div>
+
+                <div class="weather-details">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <p class="text">
+                            <span></span>
+                            Humidity
+                        </p>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="text">
+                            <span></span>
+                            Wind Speed
+                        </p>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+
+
+        
+        <script src="script.js" async defer></script>
+        <script src="https://kit.fontawesome.com/7c8801c017.js"></script>
+
+    </body>
+</html>
