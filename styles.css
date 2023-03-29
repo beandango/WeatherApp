@@ -11,7 +11,61 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #2d3e6c;
+    background: linear-gradient(124deg, #8d372a, #973131, #887126, #7c7e1e, #1c742b, #1c767a, #272381, #611368, #5a1461);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    transition: 0.6s ease-out;
+    box-shadow: 10px 8px 10px #0000006b;
+    padding: 0px 10px;
+    height: 75px;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.f {
+    justify-content: flex-start;
+}
+
+.c {
+    justify-content: flex-end;
+}
+
+.f, .c {
+    padding: 15px 13px;
+    color: #202a46;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #b2e7ff90;
+}
+
+
+.c:hover, .f:hover {
+    background: #202a46;
+    color: #fff;
+    cursor: pointer;
+}
+
+.f p, .c p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -19,11 +73,12 @@ body {
     width: 400px;
     height: 105px;
     background: #fff;
-    padding: 28px 32px;
+    padding: 28px 56px;
     overflow: hidden;
     border-radius: 20px;
     font-family: 'Roboto', sans-serif;
     transition: 0.6s ease-out;
+    box-shadow: 10px 8px 10px #0000006b;
 }
 
 .search-box {
@@ -32,6 +87,8 @@ body {
     align-items: center;
     justify-content: space-between;
     display: flex;
+    padding-bottom: 20px;
+
 }
 
 .search-box input {
@@ -40,6 +97,7 @@ body {
     font-size: 1.5em;
     text-align: center;
     font-weight: 600;
+    padding-left: 20px;
 }
 
 .search-box input::placeholder {
@@ -70,6 +128,7 @@ body {
 
 .weather-box {
     text-align: center;
+    border-radius: 20px;
 }
 
 .weather-box img {
@@ -80,30 +139,43 @@ body {
 .weather-box .temperature {
     position: relative;
     color: #202a46;
-    font-size: 4rem;
+    font-size: 60px;
     font-weight: 800;
-    margin-top: 30px;
-    margin-left: -16px;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .weather-box .temperature span {
     position: absolute;
     margin-left: 4px;
-    font-size: 1.5rem;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 .weather-box .description {
     color: #202a46;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 500;
     text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 .weather-details {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.weather-details:hover {
+    background: #c0ccec69;
+}
+
+.weather-box:hover {
+    background: #bfe8f869;
 }
 
 .weather-details .humidity, .weather-details .wind {
@@ -126,22 +198,22 @@ body {
 
 .weather-details i {
     color: #202a46;
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 10px;
+    margin-bottom: 26px;
 }
 
 .weather-details span {
     color: #202a46;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 500;
 }
 
 .weather-details p {
     color: #202a46;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 700;
 }
-
 .not-found {
     width: 100%;
     text-align: center;
@@ -178,4 +250,24 @@ body {
         opacity: 1;
     }
 }
- 
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}

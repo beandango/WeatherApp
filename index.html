@@ -19,48 +19,52 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-            <div class="container">
-                <div class="search-box">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Enter a Location">
-                    <button class="fa-solid fa-magnifying-glass"></button>
-                </div>
-
-                <div class="not-found">
-                    <img src="images/not-found.png" width="400px">
-                    <p>Oops! We couldn't find that location :(</p>
-                </div>
-
-                <div class="weather-box">
-                    <img src="">
-                    <p class="temperature"></p>
-                    <p class="description"></p>
-                </div>
-
-                <div class="weather-details">
-                    <div class="humidity">
-                        <i class="fa-solid fa-droplet"></i>
-                        <p class="text">
-                            <span></span>
-                            Humidity
-                        </p>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="search-box" title="default is °F">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Enter a Location">
+                        <button class="fa-solid fa-magnifying-glass"></button>
                     </div>
-                    <div class="wind">
-                        <i class="fa-solid fa-wind"></i>
-                        <p class="text">
-                            <span></span>
-                            Wind Speed
-                        </p>
+    
+                    <div class="not-found">
+                        <img src="images/not-found.png" width="400px">
+                        <p>Oops! We couldn't find that location :(</p>
+                    </div>
+    
+                    <div class="weather-box">
+                        <img src="">
+                        <p class="temperature"></p>
+                        <p class="description"></p>
+                    </div>
+    
+                    <div class="weather-details">
+                        <div class="humidity">
+                            <i class="fa-solid fa-droplet"></i>
+                            <p class="text">
+                                <span></span>
+                                Humidity<br>
+                            </p>
+                        </div>
+                        <div class="wind">
+                            <i class="fa-solid fa-wind"></i>
+                            <p class="text">
+                                <span></span>
+                                Wind Speed<br>
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                
-                
+                <div class="toggle">
+                    <button class="f">
+                        <p>°F</p>
+                    </button>
+                    <button class="c">
+                        <p>°C</p>
+                    </button>
+                </div>
             </div>
-
-
-        
+            
         <script src="script.js" async defer></script>
         <script src="https://kit.fontawesome.com/7c8801c017.js"></script>
 
